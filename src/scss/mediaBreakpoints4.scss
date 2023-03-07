@@ -1,0 +1,33 @@
+@media (max-width: 930px) {
+    .promo {
+        &__title {
+            font-size: 36px;
+        }
+    }
+    .advantages {
+        &__list {
+            padding: 12px 23px;
+        }
+        &__item {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .company__list {
+        &-icon {
+            margin-right: 15px;
+        }
+        &-item {
+            margin-bottom: 15px;
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    
+    .company__logo-img {
+        max-width: 420px;
+    }
+}

@@ -1,0 +1,38 @@
+.company__inner {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.company__title {
+    @include fontTitleH2;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.company__wrapper {
+    @include flexSpaceBeetween;
+}
+
+.company__list {
+    margin-right: 23px;
+    &-icon {
+        margin-right: 17px;
+    }
+    &-item {
+        @include flexCenter;
+        margin-bottom: 30px;
+    }
+    &-item:last-child {
+        margin-bottom: 0;
+    }
+    &-text {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+    }
+
+    .company__logo-img {
+        height: 100%;
+    }
+}

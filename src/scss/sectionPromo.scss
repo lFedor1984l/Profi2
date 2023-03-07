@@ -1,0 +1,68 @@
+.promo {
+    margin-top: 80px;
+    background-image: url('../img/section1/bg__promo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        margin-bottom: 38px;
+        padding-top: 100px;
+        @include fontTitleH1;
+        text-align: center;
+    }
+    &__wrapper {
+        padding-bottom: 220px;
+        @include flexCenter;
+    }
+}
+
+.advantages {
+    margin-right: 100px;
+    min-height: 230px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    &__list {
+        padding: 12px 23px;
+    }
+    &__item {
+        margin-bottom: 21px;
+        text-align: center;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    &__item:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.promo__form {
+    @include flexColum;
+    &-name {
+        margin-bottom: 20px;
+        padding: 17px 30px;
+        width: 420px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    &-tel {
+        margin-bottom: 20px;
+        padding: 18px 30px;
+        width: 420px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    &-btn {
+        padding: 13px 23px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: #F4F4F4;
+        background-color: $btnColor;
+        border: none;
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+    }
+}

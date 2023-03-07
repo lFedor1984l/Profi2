@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+    .menu {
+        &__item {
+            margin-right: 15px;
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    .header__btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+}

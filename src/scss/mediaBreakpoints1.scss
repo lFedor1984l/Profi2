@@ -1,0 +1,44 @@
+@media (max-width: 1150px) {
+    .menu {
+        &__item {
+            margin-right: 20px;
+        }
+        &__link {
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
+    .header__btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .company__list {
+        &-icon {
+            margin-right: 15px;
+        }
+        &-item {
+            margin-bottom: 30px;
+        }
+        &-item:last-child {
+            margin-bottom: 0;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 33px;
+            color: #000000;
+        }
+    
+        .company__logo-img {
+            height: 100%;
+        }
+    }
+
+    .services__wrapper {
+        justify-content: space-around;
+    }
+}

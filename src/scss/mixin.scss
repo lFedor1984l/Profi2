@@ -1,0 +1,100 @@
+//Флексы
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexSpaceBeetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexColum {
+    display: flex;
+    flex-direction: column;
+}
+
+
+// ШРИФТЫ
+//H1
+@mixin fontTitleH1 {
+    font-family: $titleH1FZ;
+    font-weight: $titleH1FW;
+    font-size: $titleH1FZ;
+    line-height: $titleH1LH;
+}
+
+//H2
+@mixin fontTitleH2 {
+    font-family: $titleH2FZ;
+    font-weight: $titleH2FW;
+    font-size: $titleH2FZ;
+    line-height: $titleH2LH;
+}
+
+
+//H3
+@mixin fontTitleH3 {
+    font-family: $titleH3FZ;
+    font-weight: $titleH3FW;
+    font-size: $titleH3FZ;
+    line-height: $titleH3LH;
+}
+
+
+//H4
+@mixin fontTitleH4 {
+    font-family: $titleH4FZ;
+    font-weight: $titleH4FW;
+    font-size: $titleH4FZ;
+    line-height: $titleH4LH;
+}
+
+
+//H5
+@mixin fontTitleH5 {
+    font-family: $titleH5FZ;
+    font-weight: $titleH5FW;
+    font-size: $titleH5FZ;
+    line-height: $titleH5LH;
+}
+
+//H6
+@mixin fontTitleH6 {
+    font-family: $titleH6FZ;
+    font-weight: $titleH6FW;
+    font-size: $titleH6FZ;
+    line-height: $titleH6LH;
+}
+
+// Основной шрифт
+@mixin fontMain {
+    font-family: $mainFF;
+    font-size: $mainFZ;
+    font-weight: $mainFW;
+    line-height: $mainLH;
+
+}
+
+// Основной шрифт кнопок
+@mixin fontBottom {
+    font-family: $fontFFBtn;
+    font-size: $fontFZBtn;
+    font-weight: $fontFWBtn;
+    line-height: $fontLHBtn;
+}
+
+
+
+@mixin clearfix {
+    &::before,
+    &::after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
