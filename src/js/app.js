@@ -5,9 +5,19 @@ flsFunctions.isWebp();
 import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 
-$(document).ready(function() {
-    $('.header__burger').click(function() {
-        $('.header__burger, .menu').toggleClass('active');
-        $('body').toggleClass('lock');
-    })
-})
+import $ from 'jquery';
+import  'slick-carousel';
+
+$('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000
+});
+      
+
+
+  

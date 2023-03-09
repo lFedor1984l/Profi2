@@ -1,0 +1,21 @@
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+.carousel__item {
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.carousel__img {
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slick-arrow {
+    display: none;
+}
+
+.slick-dots {
+    display: none;
+}

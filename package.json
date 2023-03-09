@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.28.1",
+    "carousel": "^0.0.3",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -33,12 +34,14 @@
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
     "sass": "^1.58.3",
+    "slick": "^1.12.2",
     "swiper": "^9.1.0",
     "webp-converter": "^2.2.3",
     "webpack": "^5.75.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "slick-carousel": "^1.8.1"
   }
 }
