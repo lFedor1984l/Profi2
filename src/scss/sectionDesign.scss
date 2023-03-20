@@ -1,0 +1,34 @@
+.design__inner {
+    margin-bottom: 90px;
+}
+
+.design__title {
+    @include fontTitleH2;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.design__text {
+    @include fontMain;
+    margin-bottom: 62px;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.carousel__img {
+    max-width: 100%;
+}
+
+.carousel__button {
+    width: 150px;
+    text-align: center;
+    &-item {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        border-radius: 50%;
+    }
+}

@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230309163410">
-    <script src="https://kit.fontawesome.com/28ced0cf82.js?_v=20230309163410" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230320184652">
+    <script src="https://kit.fontawesome.com/28ced0cf82.js?_v=20230320184652" crossorigin="anonymous"></script>
     <title>Главная</title>
 </head>
 <body>
     
-    <header class="header">
+    <!-- + хедер -->
+
+<header class="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
                 <img class="logo" src="../img/header/header__logo.svg" alt="logo">
             </div>
+            
+<!-- + меню навигации -->
+
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
@@ -38,6 +43,9 @@
                     </li>
                 </ul>
             </nav>
+
+<!-- - меню навигации -->
+
             <a href="#" class="header__btn">Заказать звонок</a>
             <div class="header__burger">
                 <span></span>
@@ -46,18 +54,22 @@
     </div>
 </header>
 
+<!-- - хедер -->
+
     <main class="main">
-    <section class="promo">
+    <!-- + секция промо -->
+
+<section class="promo">
     <div class="container">
         <div class="promo__inner">
             <h1 class="promo__title">Дизайн интерьеров и ремонт под ключ</h1>
             <div class="promo__wrapper">
-                <div class="advantages">
-                    <ul class="advantages__list">
-                        <li class="advantages__item">Дизайн в подарок при заказе под ключ;</li>
-                        <li class="advantages__item">Выезд на замер бесплатно - за наш счет;</li>
-                        <li class="advantages__item">Ремонт квадратного метра в Ростове от 6000;</li>
-                        <li class="advantages__item">Демонтаж бесплатно;</li>
+                <div class="advantage">
+                    <ul class="advantage__list">
+                        <li class="advantage__item">Дизайн в подарок при заказе под ключ;</li>
+                        <li class="advantage__item">Выезд на замер бесплатно - за наш счет;</li>
+                        <li class="advantage__item">Ремонт квадратного метра в Ростове от 6000;</li>
+                        <li class="advantage__item">Демонтаж бесплатно;</li>
                     </ul>
                 </div>
                 <form class="promo__form" action="GET" >
@@ -69,7 +81,11 @@
         </div>
     </div>
 </section>
-    <section class="company">
+
+<!-- - секция промо -->
+    <!-- + секция о компании -->
+
+<section class="company">
     <div class="container">
         <div class="company__inner">
             <h2 class="company__title">О КОМПАНИИ</h2>
@@ -107,7 +123,11 @@
         </div>
     </div>
 </section>
-    <section class="services">
+
+<!-- - секция о компании -->
+    <!-- + секция услуги -->
+
+<section class="services">
     <h2 class="services__title">УСЛУГИ</h2>
     <div class="container">
         <div class="services__inner">
@@ -149,36 +169,178 @@
     </div>
 </section>
 
-    <div class="container">
-    <div class="design__inner">
-        <h2 class="design__title"></h2>
-        <p class="design__text"></p>
+<!-- - секция услуги -->
 
-        <div class="carousel autoplay">
-            <div class="carousel__item">
-                <picture><source srcset="/img/section4/slider-foto-1.webp" type="image/webp"><img src="/img/section4/slider-foto-1.png" alt="" class="carousel__img"></picture>
+    <!-- + секция дизайн -->
+
+<section class="design">
+    <div class="container">
+        <div class="design__inner">
+            <h2 class="design__title">ДИЗАЙН ПРОЕКТОВ</h2>
+            <p class="design__text">Хороший ремонт квартир начинается с дизайна. Квартира будет выглядеть так, как вы захотите. Любые цвета и материалы.</p>
+    
+<!-- + слайдер -->
+
+            <div class="carousel autoplay">
+                <!-- <div class="carousel__item">
+                    <picture><source srcset="/img/section4/slider-foto-1.webp" type="image/webp"><img src="/img/section4/slider-foto-1.png" alt="" class="carousel__img"></picture>
+                </div>
+                <div class="carousel__item">
+                    <picture><source srcset="/img/section4/slider-foto-2.webp" type="image/webp"><img src="/img/section4/slider-foto-2.png" alt="" class="carousel__img"></picture>
+                </div>
+                <div class="carousel__item">
+                    <picture><source srcset="/img/section4/slider-foto-3.webp" type="image/webp"><img src="/img/section4/slider-foto-3.png" alt="" class="carousel__img"></picture>
+                </div>
+                <div class="carousel__item">
+                    <picture><source srcset="/img/section4/slider-foto-4.webp" type="image/webp"><img src="/img/section4/slider-foto-4.png" alt="" class="carousel__img"></picture>
+                </div> -->
+                <div class="carousel__item">
+                    <picture><source srcset="/img/section4/slider-foto-5.webp" type="image/webp"><img class="carousel__img" src="/img/section4/slider-foto-5.png" alt="slide" ></picture>
+                </div>
             </div>
-            <div class="carousel__item">
-                <picture><source srcset="/img/section4/slider-foto-2.webp" type="image/webp"><img src="/img/section4/slider-foto-2.png" alt="" class="carousel__img"></picture>
-            </div>
-            <div class="carousel__item">
-                <picture><source srcset="/img/section4/slider-foto-3.webp" type="image/webp"><img src="/img/section4/slider-foto-3.png" alt="" class="carousel__img"></picture>
-            </div>
-            <div class="carousel__item">
-                <picture><source srcset="/img/section4/slider-foto-4.webp" type="image/webp"><img src="/img/section4/slider-foto-4.png" alt="" class="carousel__img"></picture>
-            </div>
-            <div class="carousel__item">
-                <picture><source srcset="/img/section4/slider-foto-5.webp" type="image/webp"><img src="/img/section4/slider-foto-5.png" alt="" class="carousel__img"></picture>
+
+<!-- - слайдер -->
+
+            <div class="carousel__button">
+                <div class="carousel__button-item"></div>
+                <div class="carousel__button-item"></div>
+                <div class="carousel__button-item"></div>
+                <div class="carousel__button-item"></div>
+                <div class="carousel__button-item"></div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<!-- - секция дизайн -->
+
+    <!-- + секция преимущества -->
+
+<section class="advantages">
+    <h2 class="advantages__title">ПРЕИМУЩЕСТВА</h2>
+    <div class="container">
+        <div class="advantages__inner">
+
+<!-- + карточки преимщества -->
+
+            <div class="advantages__wrapper">
+                <div class="advantages__card">
+                    <div class="advantages__card-inner">
+                        <img class="advantages__card-icon" src="img/section5/advantages__icon-prog.svg" alt="icon" >
+                        <h4 class="advantages__card-title">Индивидуальный дизайн - протект</h4>
+                        <p class="advantages__card-text">Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проиект с мебелью, светом и декором.</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages__card-inner">
+                        <img class="advantages__card-icon" src="img/section5/advantages__icon-warranty.svg" alt="icon" >
+                        <h4 class="advantages__card-title">Гарантия качества + договор</h4>
+                        <p class="advantages__card-text">Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проиект с мебелью, светом и декором.</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages__card-inner">
+                        <img class="advantages__card-icon" src="img/section5/advantages__icon-price.svg" alt="icon" >
+                        <h4 class="advantages__card-title">Фиксированная цена</h4>
+                        <p class="advantages__card-text">Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проиект с мебелью, светом и декором.</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages__card-inner">
+                        <img class="advantages__card-icon" src="img/section5/advantages__icon-group.svg" alt="icon" >
+                        <h4 class="advantages__card-title">Индивидуальный дизайн - протект</h4>
+                        <p class="advantages__card-text">Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проиект с мебелью, светом и декором.</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages__card-inner">
+                        <img class="advantages__card-icon" src="img/section5/advantages__icon-master.svg" alt="icon" >
+                        <h4 class="advantages__card-title">Индивидуальный подход</h4>
+                        <p class="advantages__card-text">Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проиект с мебелью, светом и декором.</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages__card-inner">
+                        <img class="advantages__card-icon" src="img/section5/advantages__icon-approach.svg" alt="icon" >
+                        <h4 class="advantages__card-title">Опытные мастера</h4>
+                        <p class="advantages__card-text">Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проиект с мебелью, светом и декором.</p>
+                    </div>
+                </div>
+            </div>
+
+<!-- - карточки преимщества -->
+
+        </div>
+    </div>
+</section>
+
+<!-- - секция преимущества -->
+    <!-- + секция примеры -->
+
+<section class="example">
+    <div class="container">
+        <div class="example__inner">
+            <h2 class="example__title">ПРИМЕРЫ ВЫПОЛНЕННЫХ РАБОТ </h2>
+            <div class="example__wrapper">
+                <video class="example__video" controls="controls">
+                    <source src="../../img/section6/sample-5s.mp4" type="video/mp4"/>
+                </video>
+                <div class="example__wrapper-box">
+                    <h4 class="example__wrapper-title">Название проекта</h4>
+                    <p class="example__wrapper-text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.</p>
+                    <p class="example__wrapper-date-time">
+                        Дата работы: <time>2022-02-12</time>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- - секция примеры -->
+    <!-- + секция отзывы -->
+<section class="reviews">
+    <h2 class="reviews__title">ОТЗЫВЫ</h2>
+    <div class="container">
+        <div class="reviews__inner">
+
+<!-- + карточки отзывов -->
+
+            <div class="reviews__wrapper">
+                <div class="reviews__card">
+                    <div class="reviews__card-inner">
+                        <picture><source srcset="img/section7/reviews__foto-1.webp" type="image/webp"><img class="reviews__card-icon" src="img/section7/reviews__foto-1.png" alt="icon" ></picture>
+                        <h4 class="reviews__card-title">Киану Ривз</h4>
+                        <p class="reviews__card-text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.</p>
+                        <div class="reviews__card-date-social"></div>
+                            <p class="reviews__card-date-time">
+                                Дата
+                                <time>14.12.2022</time>
+                            </p>
+                            <div class="reviews__card-socoal">
+                                <p class="reviews__card-socoal-text">Соц сети</p>
+                                <div class="reviews__card-socoal-icon">
+                                    <img class="reviews__card-socoal-item" src="img/section7/reviews__telegram.svg" alt="item">
+                                    <img class="reviews__card-socoal-item" src="img/section7/reviews__vk.svg" alt="item">
+                                    <img class="reviews__card-socoal-item" src="img/section7/reviews__instagram.svg" alt="item">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- - карточки отзывов -->
+
+        </div>
+    </div>
+</section>
+<!-- - секция отзывы -->
 </main>
 
     <footer class="footer">
     
 </footer>
 
-    <script src="js/app.min.js?_v=20230309163410"></script>
+    <script src="js/app.min.js?_v=20230320184652"></script>
 </body>
 </html>

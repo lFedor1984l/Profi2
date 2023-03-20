@@ -4,4 +4,26 @@
             font-size: 32px;
         }
     }
+
+    .advantages__card {
+        &-inner {
+            @include flexColum;
+            padding: 20px;
+        }
+        &-icon {
+            margin-bottom: 20px;
+            width: 60px;
+            height: 60px;
+        }
+        &-title {
+            margin-bottom: 20px;
+            height: 15px;
+            font-size: 16px;
+            line-height: 15px;
+        }
+        &-text {
+            font-size: 12px;
+            line-height: 25px;
+        }
+    }
 }

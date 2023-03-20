@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html,
 body,
 div,
@@ -176,132 +178,6 @@ table {
   src: url("../fonts/open-sans-v34-cyrillic-700.woff2") format("woff2"), url("../fonts/open-sans-v34-cyrillic-700.woff") format("woff");
 }
 
-/* Slider */
-
-.slick-slider {
-  position: relative;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-  content: "";
-  display: table;
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none;
-}
-
-[dir=rtl] .slick-slide {
-  float: right;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
-
-.carousel__item {
-  max-width: 1200px;
-  height: 500px;
-  border-radius: 5px;
-}
-
-.carousel__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.slick-arrow {
-  display: none;
-}
-
-.slick-dots {
-  display: none;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -310,7 +186,7 @@ table {
 body {
   font-family: "Roboto";
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 43px;
 }
 
@@ -319,6 +195,10 @@ body {
   padding: 0 20px;
   max-width: 1240px;
 }
+
+/*====================================================================================================*/
+
+/* + хедер */
 
 .header {
   position: fixed;
@@ -366,6 +246,10 @@ body {
   display: none;
 }
 
+/*====================================================================================================*/
+
+/* + меню навигации */
+
 .menu {
   margin-right: auto;
 }
@@ -393,6 +277,10 @@ body {
   font-size: 20px;
 }
 
+/* - меню навигации */
+
+/*====================================================================================================*/
+
 .header__btn {
   padding: 10px 20px;
   font-family: "Open Sans";
@@ -408,7 +296,11 @@ body {
   z-index: 2;
 }
 
-.no-webp .promo {
+/* - хедер */
+
+/*====================================================================================================*/
+
+.no-webp .promo{
   background-image: url("../img/section1/bg__promo.png"); }
 
 .promo {
@@ -437,25 +329,25 @@ body {
           align-items: center;
 }
 
-.advantages {
+.advantage {
   margin-right: 100px;
   min-height: 230px;
   background: rgba(255, 255, 255, 0.35);
   border-radius: 10px;
 }
 
-.advantages__list {
+.advantage__list {
   padding: 12px 23px;
 }
 
-.advantages__item {
+.advantage__item {
   margin-bottom: 21px;
   text-align: center;
   font-size: 28px;
   line-height: 33px;
 }
 
-.advantages__item:last-child {
+.advantage__item:last-child {
   margin-bottom: 0px;
 }
 
@@ -601,6 +493,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -628,6 +523,268 @@ body {
   color: #ffffff;
   text-shadow: 5px 0 5px #000;
 }
+
+.design__inner {
+  margin-bottom: 90px;
+}
+
+.design__title {
+  font-family: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.design__text {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-bottom: 62px;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.carousel__img {
+  max-width: 100%;
+}
+
+.carousel__button {
+  width: 150px;
+  text-align: center;
+}
+
+.carousel__button-item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/*====================================================================================================*/
+
+/* + секция преимущества */
+
+.advantages {
+  margin-bottom: 100px;
+  background-color: #9CC3E7;
+}
+
+.advantages__title {
+  padding-bottom: 70px;
+  font-family: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*====================================================================================================*/
+
+/* + карточка преимущества */
+
+.advantages__card {
+  margin-bottom: 20px;
+  max-width: 387px;
+  background: #F2F2F2;
+  -webkit-box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.advantages__card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+
+.advantages__card-icon {
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.advantages__card-title {
+  margin-bottom: 30px;
+  height: 68px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.advantages__card-text {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+/* - карточка преимущества */
+
+/*====================================================================================================*/
+
+/* - секция преимущества */
+
+/*====================================================================================================*/
+
+.example {
+  margin-bottom: 110px;
+}
+
+.example__title {
+  font-family: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.example__video {
+  margin-right: 80px;
+  max-width: 650px;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.example__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.example__wrapper-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.example__wrapper-title {
+  margin-bottom: 90px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.example__wrapper-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 43px;
+  letter-spacing: 0.11em;
+  color: #000000;
+}
+
+.example__wrapper-date-time {
+  margin-top: 31px;
+}
+
+/*====================================================================================================*/
+
+/* + секция отзывы */
+
+.reviews {
+  margin-bottom: 100px;
+  background-color: #9CC3E7;
+}
+
+.reviews__title {
+  padding-bottom: 70px;
+  font-family: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/*====================================================================================================*/
+
+/* + карточки отзывы */
+
+.reviews__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 285px;
+  background: #F2F2F2;
+  -webkit-box-shadow: 8px 7px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 8px 7px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.reviews__card-inner {
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* - карточки отзывы */
+
+/*====================================================================================================*/
+
+/* - секция отзывы */
+
+/*====================================================================================================*/
 
 @media (max-width: 1150px) {
   .menu__item {
@@ -672,6 +829,10 @@ body {
   .services__wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .advantages__card {
+    max-width: 45%;
   }
 }
 
@@ -830,6 +991,10 @@ body {
   .company__logo-img {
     max-width: 380px;
   }
+
+  .advantages__card {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -950,7 +1115,7 @@ body {
     margin-top: 50px;
   }
 
-  .advantages {
+  .advantage {
     margin-right: 50px;
   }
 
@@ -982,6 +1147,34 @@ body {
   .company__logo-img {
     max-width: 100%;
   }
+
+  .advantages__card-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+
+  .advantages__card-icon {
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantages__card-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .advantages__card-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -996,14 +1189,14 @@ body {
             flex-direction: column;
   }
 
-  .advantages {
+  .advantage {
     margin-right: 0px;
     margin-bottom: 20px;
     max-width: 300px;
     min-height: 130px;
   }
 
-  .advantages__list {
+  .advantage__list {
     padding: 10px 10px;
   }
 
@@ -1042,6 +1235,35 @@ body {
   .promo__title {
     font-size: 32px;
   }
+
+  .advantages__card-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+
+  .advantages__card-icon {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .advantages__card-title {
+    margin-bottom: 20px;
+    height: 15px;
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .advantages__card-text {
+    font-size: 12px;
+    line-height: 25px;
+  }
 }
 
-.webp .promo { background-image: url(../img/section1/bg__promo.webp); }
+.webp .promo{ background-image: url(../img/section1/bg__promo.webp); }

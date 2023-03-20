@@ -1,4 +1,8 @@
 //Флексы
+@mixin flex {
+    display: flex;
+}
+
 @mixin flexCenter {
     display: flex;
     align-items: center;
@@ -14,6 +18,13 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin flexWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
 
 // ШРИФТЫ
@@ -45,7 +56,7 @@
 
 //H4
 @mixin fontTitleH4 {
-    font-family: $titleH4FZ;
+    font-family: $titleH4FF;
     font-weight: $titleH4FW;
     font-size: $titleH4FZ;
     line-height: $titleH4LH;

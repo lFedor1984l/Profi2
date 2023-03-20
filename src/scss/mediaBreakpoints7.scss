@@ -93,7 +93,7 @@
         margin-top: 50px;
     }
 
-    .advantages {
+    .advantage {
         margin-right: 50px;
     }
     
@@ -118,5 +118,26 @@
 
     .company__logo-img {
         max-width: 100%;
+    }
+
+    .advantages__card {
+        &-inner {
+            @include flexColum;
+            padding: 20px;
+        }
+        &-icon {
+            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+        }
+        &-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 25px;
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 }

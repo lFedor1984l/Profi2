@@ -1,0 +1,53 @@
+/*====================================================================================================*/
+/* + секция преимущества */
+
+.advantages {
+    margin-bottom: 100px;
+    background-color: $mainColor;
+}
+
+.advantages__title {
+    padding-bottom: 70px;
+    @include fontTitleH2;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.advantages__wrapper {
+    @include flexWrap;
+}
+
+/*====================================================================================================*/
+/* + карточка преимущества */
+
+.advantages__card {
+    margin-bottom: 20px;
+    max-width: 387px;
+    background: #F2F2F2;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    &-inner {
+        @include flexColum;
+        padding: 30px;
+    }
+    &-icon {
+        margin-bottom: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    &-title {
+        margin-bottom: 30px;
+        height: 68px;
+        @include fontTitleH4;
+    }
+    &-text {
+        @include fontMain;
+    }
+}
+
+/* - карточка преимущества */
+/*====================================================================================================*/
+
+/* - секция преимущества */
+/*====================================================================================================*/

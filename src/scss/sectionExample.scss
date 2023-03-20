@@ -1,0 +1,41 @@
+.example {
+    margin-bottom: 110px;
+}
+
+.example__title {
+    @include fontTitleH2;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.example__video {
+    margin-right: 80px;
+    max-width: 650px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+.example__wrapper {
+    @include flexSpaceBeetween;
+    &-box {
+        @include flexColum;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-title {
+        margin-bottom: 90px;
+        @include fontTitleH4;
+    }
+    &-text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 43px;
+        letter-spacing: 0.11em;
+        color: #000000;
+    }
+    &-date-time {
+        margin-top: 31px;
+    }
+}
